@@ -1,6 +1,6 @@
-QuizMaster: Learn and Play India
+MultiDomainQuiz: Learn and Play India
 Description
-QuizMaster is an iOS application designed to enhance your knowledge about various domains in India. It provides an engaging platform for learning and testing your knowledge in a quiz format.
+MultiDomainQuiz is an iOS application designed to enhance your knowledge about various domains in India. It provides an engaging platform for learning and testing your knowledge in a quiz format.
 
 Compatibility
 iOS 13 and above
