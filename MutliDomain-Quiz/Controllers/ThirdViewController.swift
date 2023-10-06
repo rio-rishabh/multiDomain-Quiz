@@ -1,0 +1,65 @@
+//
+//  ThirdViewController.swift
+//  MutliDomain-Quiz
+//
+//  Created by Rishabh Sharma on 04/10/23.
+//
+
+import UIKit
+
+class ThirdViewController: UIViewController {
+
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var option1: UIButton!
+    @IBOutlet weak var option2: UIButton!
+    @IBOutlet weak var option3: UIButton!
+    @IBOutlet weak var option4: UIButton!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        updateUI()
+    }
+    
+    var quizBrain_3 = QuizBrain_3()
+    
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+        let userAnswer = sender.currentTitle!
+        
+        let userCorrectAnswer = quizBrain_3.checkAnswer(userAnswer)
+        
+        if userCorrectAnswer{
+            sender.backgroundColor = UIColor.green
+        }
+        else{
+            sender.backgroundColor = UIColor.red
+        }
+        
+        quizBrain_3.getNewQuestion()
+        
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+        
+    }
+    
+    @objc func updateUI(){
+        questionLabel.text = quizBrain_3.getQuestionText()
+        
+        let answerChoice = quizBrain_3.getAnswerChoice()
+        scoreLabel.text = "Score: \(quizBrain_3.getScore())"
+        option1.setTitle(answerChoice[0], for: .normal)
+        option2.setTitle(answerChoice[1], for: .normal)
+        option3.setTitle(answerChoice[2], for: .normal)
+        option4.setTitle(answerChoice[3], for: .normal)
+        
+        option1.backgroundColor = UIColor.clear
+        option2.backgroundColor = UIColor.clear
+        option3.backgroundColor = UIColor.clear
+        option4.backgroundColor = UIColor.clear
+    }
+  
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
+}

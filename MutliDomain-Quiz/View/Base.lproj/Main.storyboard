@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LandingViewController" customModule="MutliDomain_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="6YF-2y-VzC">
+                                <rect key="frame" x="20" y="48" width="374" height="814"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Domain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCd-MK-PWG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="326"/>
+                                        <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9u-bu-7gP">
+                                        <rect key="frame" x="0.0" y="368" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="p3f-ol-nIu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Indian Defence" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="indianDefencePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ydw-gw-mDU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-I5-UBi">
+                                        <rect key="frame" x="0.0" y="490" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="yFU-cp-b6R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Indian Politics" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="indianPoliticsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="meK-yb-uuy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pud-i0-YlK">
+                                        <rect key="frame" x="0.0" y="612" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Oi2-dn-uWT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Indian History" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="indianHistoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PL2-MF-Pek"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCH-G3-GOj">
+                                        <rect key="frame" x="0.0" y="734" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="M9N-KM-fk0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Indian Economy" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="indianEconomyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1XD-Ol-bcn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6YF-2y-VzC" secondAttribute="bottom" id="RRh-N3-3Js"/>
+                            <constraint firstItem="6YF-2y-VzC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UK4-nL-0N7"/>
+                            <constraint firstItem="6YF-2y-VzC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fai-2n-Qel"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6YF-2y-VzC" secondAttribute="trailing" id="hpv-mn-VSJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="9Vy-6M-ijA" kind="presentation" identifier="goToFirst" id="2LW-xO-1op"/>
+                        <segue destination="VDv-AY-6iE" kind="presentation" identifier="goToSecond" id="ESV-OA-niJ"/>
+                        <segue destination="Tqn-Wh-PQg" kind="presentation" identifier="goToThird" id="6mA-Ux-aXv"/>
+                        <segue destination="oxu-UN-I2f" kind="presentation" identifier="goToFourth" id="66U-mu-rgt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="-2.0089285714285712"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="WOG-in-ZtF">
+            <objects>
+                <viewController id="9Vy-6M-ijA" customClass="FirstViewController" customModule="MutliDomain_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wbe-gA-pdM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Q-yk-9xf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="P04-If-c4a">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMS-8M-gu8">
+                                                <rect key="frame" x="339" y="0.0" width="75" height="216.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backButtonPressed:" destination="9Vy-6M-ijA" eventType="touchUpInside" id="6ah-sN-Vgu"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4q-Uc-eG4" userLabel="Score:">
+                                                <rect key="frame" x="0.0" y="233.5" width="414" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khg-6K-Txi">
+                                                <rect key="frame" x="0.0" y="281" width="414" height="85"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="ZvM-bl-jam"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Khg-6K-Txi" firstAttribute="centerX" secondItem="P04-If-c4a" secondAttribute="centerX" id="53a-V9-59u"/>
+                                            <constraint firstItem="x4q-Uc-eG4" firstAttribute="leading" secondItem="P04-If-c4a" secondAttribute="leading" id="EMT-vy-0Av"/>
+                                            <constraint firstItem="Khg-6K-Txi" firstAttribute="centerX" secondItem="P04-If-c4a" secondAttribute="centerX" id="NoS-LX-KQq"/>
+                                            <constraint firstAttribute="trailing" secondItem="x4q-Uc-eG4" secondAttribute="trailing" id="Zda-ul-DEw"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MZ-cA-vL2">
+                                        <rect key="frame" x="46" y="416" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="DrG-aV-uXj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option1" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="9Vy-6M-ijA" eventType="touchUpInside" id="6rj-Ik-k0W"/>
+                                            <action selector="indianDefencePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Md-5h-TPk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqo-dl-Wp7">
+                                        <rect key="frame" x="46" y="546" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="lId-9O-Ckt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option2" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="9Vy-6M-ijA" eventType="touchUpInside" id="bfK-cg-9HW"/>
+                                            <action selector="indianPoliticsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uae-cW-W63"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f15-Jw-Gnu">
+                                        <rect key="frame" x="46" y="676" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="G4j-mb-znP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option3" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="9Vy-6M-ijA" eventType="touchUpInside" id="1wa-Hl-kDe"/>
+                                            <action selector="indianHistoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxj-Fr-z4h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPX-Fy-yO6">
+                                        <rect key="frame" x="46" y="806" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="6DZ-pf-eQa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option4" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="9Vy-6M-ijA" eventType="touchUpInside" id="vTB-NY-fGc"/>
+                                            <action selector="indianEconomyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZ7-tO-fM6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="P04-If-c4a" firstAttribute="top" secondItem="Q2Q-yk-9xf" secondAttribute="top" id="VFI-Fd-7O2"/>
+                                    <constraint firstItem="P04-If-c4a" firstAttribute="leading" secondItem="Q2Q-yk-9xf" secondAttribute="leading" id="aCM-Lg-qS6"/>
+                                    <constraint firstAttribute="trailing" secondItem="P04-If-c4a" secondAttribute="trailing" id="lhJ-bJ-qYx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W3d-0s-AOH"/>
+                        <color key="backgroundColor" red="0.1411764771" green="0.1411764771" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="W3d-0s-AOH" firstAttribute="bottom" secondItem="Q2Q-yk-9xf" secondAttribute="bottom" id="A9e-VK-HCQ"/>
+                            <constraint firstItem="Q2Q-yk-9xf" firstAttribute="top" secondItem="W3d-0s-AOH" secondAttribute="top" id="T2R-sj-nK2"/>
+                            <constraint firstAttribute="trailing" secondItem="Q2Q-yk-9xf" secondAttribute="trailing" id="XO6-Sy-W65"/>
+                            <constraint firstItem="Q2Q-yk-9xf" firstAttribute="leading" secondItem="Wbe-gA-pdM" secondAttribute="leading" id="amu-lH-kR2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="option1" destination="9MZ-cA-vL2" id="TiS-bn-D8l"/>
+                        <outlet property="option2" destination="Nqo-dl-Wp7" id="jKf-Vd-IBE"/>
+                        <outlet property="option3" destination="f15-Jw-Gnu" id="bgc-KC-q9e"/>
+                        <outlet property="option4" destination="YPX-Fy-yO6" id="p79-dO-gRw"/>
+                        <outlet property="questionLabel" destination="Khg-6K-Txi" id="jcm-2r-8GK"/>
+                        <outlet property="scoreLabel" destination="x4q-Uc-eG4" id="a5h-yf-i2b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eY1-2f-NFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="816"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="VPU-ZF-Bsf">
+            <objects>
+                <viewController id="VDv-AY-6iE" customClass="SecondViewController" customModule="MutliDomain_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1h9-EL-dux">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NUn-zQ-ILA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ksr-fj-kxb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pri-ko-LcM">
+                                                <rect key="frame" x="339" y="0.0" width="75" height="216.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backButtonPressed:" destination="9Vy-6M-ijA" eventType="touchUpInside" id="IeQ-OY-s1N"/>
+                                                    <action selector="backButtonPressed:" destination="VDv-AY-6iE" eventType="touchUpInside" id="tRc-13-dwz"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Am-eb-a4d" userLabel="Score:">
+                                                <rect key="frame" x="0.0" y="233.5" width="414" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuestionLabel" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B9-q8-jFv">
+                                                <rect key="frame" x="0.0" y="281" width="414" height="85"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="OMc-8K-Arh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4B9-q8-jFv" firstAttribute="centerX" secondItem="Ksr-fj-kxb" secondAttribute="centerX" id="0c2-dI-BXm"/>
+                                            <constraint firstItem="3Am-eb-a4d" firstAttribute="leading" secondItem="Ksr-fj-kxb" secondAttribute="leading" id="Ckc-4I-Pul"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Am-eb-a4d" secondAttribute="trailing" id="qJA-d6-UvS"/>
+                                            <constraint firstItem="4B9-q8-jFv" firstAttribute="centerX" secondItem="Ksr-fj-kxb" secondAttribute="centerX" id="tdo-wA-LCE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E0-vi-7gC">
+                                        <rect key="frame" x="46" y="416" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="qof-6X-uXH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option1" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="VDv-AY-6iE" eventType="touchUpInside" id="zPU-D0-Ia7"/>
+                                            <action selector="indianDefencePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rgK-P2-cSL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UD-ws-3Or">
+                                        <rect key="frame" x="46" y="546" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="11o-lp-eWp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option2" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="VDv-AY-6iE" eventType="touchUpInside" id="fPW-j0-I7u"/>
+                                            <action selector="indianPoliticsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6y-Xh-opO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WH-a6-x8f">
+                                        <rect key="frame" x="46" y="676" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Awm-pn-C8c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option3" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="VDv-AY-6iE" eventType="touchUpInside" id="Jbd-D3-4VZ"/>
+                                            <action selector="indianHistoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfU-Rp-Mdx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZr-hh-wWR">
+                                        <rect key="frame" x="46" y="806" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="3am-jB-kJ7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option4" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="VDv-AY-6iE" eventType="touchUpInside" id="8od-eW-sAe"/>
+                                            <action selector="indianEconomyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uA-P5-IJy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ksr-fj-kxb" firstAttribute="leading" secondItem="NUn-zQ-ILA" secondAttribute="leading" id="8ew-2i-tIe"/>
+                                    <constraint firstItem="Ksr-fj-kxb" firstAttribute="top" secondItem="NUn-zQ-ILA" secondAttribute="top" id="E3y-nd-I1f"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ksr-fj-kxb" secondAttribute="trailing" id="ET8-oJ-pRf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YmO-NQ-pqs"/>
+                        <color key="backgroundColor" red="0.1411764771" green="0.1411764771" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NUn-zQ-ILA" firstAttribute="top" secondItem="YmO-NQ-pqs" secondAttribute="top" id="Bds-GP-BFc"/>
+                            <constraint firstItem="NUn-zQ-ILA" firstAttribute="leading" secondItem="1h9-EL-dux" secondAttribute="leading" id="PB5-4C-mDV"/>
+                            <constraint firstItem="YmO-NQ-pqs" firstAttribute="bottom" secondItem="NUn-zQ-ILA" secondAttribute="bottom" id="eDb-ZM-bWz"/>
+                            <constraint firstAttribute="trailing" secondItem="NUn-zQ-ILA" secondAttribute="trailing" id="rUA-Dn-67S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="option1" destination="8E0-vi-7gC" id="dbv-dC-xQd"/>
+                        <outlet property="option2" destination="5UD-ws-3Or" id="aDu-fP-b00"/>
+                        <outlet property="option3" destination="5WH-a6-x8f" id="QmS-A5-OAR"/>
+                        <outlet property="option4" destination="rZr-hh-wWR" id="UuB-IV-Dq9"/>
+                        <outlet property="questionLabel" destination="4B9-q8-jFv" id="bx0-3j-yYD"/>
+                        <outlet property="scoreLabel" destination="3Am-eb-a4d" id="DUb-L4-yvB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ji-tt-W5A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="816"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="Ooe-Nv-dXD">
+            <objects>
+                <viewController id="Tqn-Wh-PQg" customClass="ThirdViewController" customModule="MutliDomain_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u5t-by-bCR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zK2-rw-9Of">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="lna-J7-R1L">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38d-lx-All">
+                                                <rect key="frame" x="339" y="0.0" width="75" height="216.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backButtonPressed:" destination="Tqn-Wh-PQg" eventType="touchUpInside" id="ZeM-ma-ZnN"/>
+                                                    <action selector="backButtonPressed:" destination="VDv-AY-6iE" eventType="touchUpInside" id="gbn-Ji-jnc"/>
+                                                    <action selector="backButtonPressed:" destination="9Vy-6M-ijA" eventType="touchUpInside" id="nhc-1g-IZY"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdT-FO-jtA" userLabel="Score:">
+                                                <rect key="frame" x="0.0" y="233.5" width="414" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuestionLabel" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWQ-ZR-oOh">
+                                                <rect key="frame" x="0.0" y="281" width="414" height="85"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="AGv-DB-VTE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GWQ-ZR-oOh" firstAttribute="centerX" secondItem="lna-J7-R1L" secondAttribute="centerX" id="5DT-BL-w2Q"/>
+                                            <constraint firstItem="xdT-FO-jtA" firstAttribute="leading" secondItem="lna-J7-R1L" secondAttribute="leading" id="YPw-Ag-FN9"/>
+                                            <constraint firstItem="GWQ-ZR-oOh" firstAttribute="centerX" secondItem="lna-J7-R1L" secondAttribute="centerX" id="s9F-bW-YSn"/>
+                                            <constraint firstAttribute="trailing" secondItem="xdT-FO-jtA" secondAttribute="trailing" id="xxe-o0-Xvn"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zub-nw-ycZ">
+                                        <rect key="frame" x="46" y="416" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="13g-JV-8Hc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option1" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="Tqn-Wh-PQg" eventType="touchUpInside" id="CPO-Jp-o3l"/>
+                                            <action selector="indianDefencePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HbN-5R-c5T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOW-W5-PFn">
+                                        <rect key="frame" x="46" y="546" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="uNk-jn-loh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option2" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="Tqn-Wh-PQg" eventType="touchUpInside" id="cON-QO-Y9c"/>
+                                            <action selector="indianPoliticsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwD-Nx-i59"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jm5-r2-kpA">
+                                        <rect key="frame" x="46" y="676" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="wYa-AZ-Q60"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option3" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="Tqn-Wh-PQg" eventType="touchUpInside" id="rj4-qU-pck"/>
+                                            <action selector="indianHistoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ntC-bj-JaS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyy-v7-KBt">
+                                        <rect key="frame" x="46" y="806" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="zDY-Rr-g3y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option4" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="Tqn-Wh-PQg" eventType="touchUpInside" id="fIP-q7-s3K"/>
+                                            <action selector="indianEconomyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6K-bF-luf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lna-J7-R1L" firstAttribute="leading" secondItem="zK2-rw-9Of" secondAttribute="leading" id="L24-eO-QAl"/>
+                                    <constraint firstAttribute="trailing" secondItem="lna-J7-R1L" secondAttribute="trailing" id="VUa-B2-9lO"/>
+                                    <constraint firstItem="lna-J7-R1L" firstAttribute="top" secondItem="zK2-rw-9Of" secondAttribute="top" id="xtw-5Z-IEo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nUG-SU-941"/>
+                        <color key="backgroundColor" red="0.1411764771" green="0.1411764771" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zK2-rw-9Of" secondAttribute="trailing" id="NbR-nx-UGz"/>
+                            <constraint firstItem="nUG-SU-941" firstAttribute="bottom" secondItem="zK2-rw-9Of" secondAttribute="bottom" id="kPv-s1-9H3"/>
+                            <constraint firstItem="zK2-rw-9Of" firstAttribute="top" secondItem="nUG-SU-941" secondAttribute="top" id="neA-0e-ZK2"/>
+                            <constraint firstItem="zK2-rw-9Of" firstAttribute="leading" secondItem="u5t-by-bCR" secondAttribute="leading" id="s3O-oI-1Qs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="option1" destination="Zub-nw-ycZ" id="BHk-6T-f6g"/>
+                        <outlet property="option2" destination="OOW-W5-PFn" id="IHq-B2-dBM"/>
+                        <outlet property="option3" destination="Jm5-r2-kpA" id="leh-zH-ZaE"/>
+                        <outlet property="option4" destination="wyy-v7-KBt" id="jM0-EH-Uua"/>
+                        <outlet property="questionLabel" destination="GWQ-ZR-oOh" id="WTe-Ud-6di"/>
+                        <outlet property="scoreLabel" destination="xdT-FO-jtA" id="6VN-uP-2SL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWp-eM-D90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="816"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="ryl-k7-BQd">
+            <objects>
+                <viewController id="oxu-UN-I2f" customClass="FourthViewController" customModule="MutliDomain_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lsd-CA-kZw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Hmr-V7-pcz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="tAt-0s-RDz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvC-4m-kd2">
+                                                <rect key="frame" x="339" y="0.0" width="75" height="216.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backButtonPressed:" destination="oxu-UN-I2f" eventType="touchUpInside" id="1fd-Ee-XpD"/>
+                                                    <action selector="backButtonPressed:" destination="9Vy-6M-ijA" eventType="touchUpInside" id="6c3-10-FUs"/>
+                                                    <action selector="backButtonPressed:" destination="Tqn-Wh-PQg" eventType="touchUpInside" id="BQW-9O-5ma"/>
+                                                    <action selector="backButtonPressed:" destination="VDv-AY-6iE" eventType="touchUpInside" id="NIU-js-zQc"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNy-Vf-aZJ" userLabel="Score:">
+                                                <rect key="frame" x="0.0" y="233.5" width="414" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuestionLabel" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyC-xY-2lL">
+                                                <rect key="frame" x="0.0" y="281" width="414" height="85"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="hpX-B3-MF3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="xNy-Vf-aZJ" secondAttribute="trailing" id="I0O-MP-oaF"/>
+                                            <constraint firstItem="IyC-xY-2lL" firstAttribute="centerX" secondItem="tAt-0s-RDz" secondAttribute="centerX" id="aRp-kJ-nRm"/>
+                                            <constraint firstItem="IyC-xY-2lL" firstAttribute="centerX" secondItem="tAt-0s-RDz" secondAttribute="centerX" id="cup-ti-qcA"/>
+                                            <constraint firstItem="xNy-Vf-aZJ" firstAttribute="leading" secondItem="tAt-0s-RDz" secondAttribute="leading" id="dkn-cm-Onb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jM-5z-FYm">
+                                        <rect key="frame" x="46" y="416" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="BXG-zP-ciM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option1" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="indianDefencePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AwM-iZ-W7M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikm-Xn-Q1K">
+                                        <rect key="frame" x="46" y="546" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="ULy-lP-pCf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option2" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="indianPoliticsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9EG-RW-kOf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knv-aX-1kd">
+                                        <rect key="frame" x="46" y="676" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="2ov-MG-0IC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option3" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="indianHistoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AU9-Mo-SHD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVq-Qa-X7H">
+                                        <rect key="frame" x="46" y="806" width="322" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="bRV-re-mvR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Option4" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="indianEconomyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ChY-Ck-kZ6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tAt-0s-RDz" firstAttribute="top" secondItem="Hmr-V7-pcz" secondAttribute="top" id="Fz7-0B-VZB"/>
+                                    <constraint firstItem="tAt-0s-RDz" firstAttribute="leading" secondItem="Hmr-V7-pcz" secondAttribute="leading" id="RLK-4o-wRq"/>
+                                    <constraint firstAttribute="trailing" secondItem="tAt-0s-RDz" secondAttribute="trailing" id="UbV-JP-RJf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="COi-KK-YSR"/>
+                        <color key="backgroundColor" red="0.1411764771" green="0.1411764771" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Hmr-V7-pcz" firstAttribute="leading" secondItem="lsd-CA-kZw" secondAttribute="leading" id="0tE-Kr-eAS"/>
+                            <constraint firstItem="COi-KK-YSR" firstAttribute="bottom" secondItem="Hmr-V7-pcz" secondAttribute="bottom" id="QKG-hY-aea"/>
+                            <constraint firstItem="Hmr-V7-pcz" firstAttribute="top" secondItem="COi-KK-YSR" secondAttribute="top" id="Saw-1u-Uo8"/>
+                            <constraint firstAttribute="trailing" secondItem="Hmr-V7-pcz" secondAttribute="trailing" id="xSN-cM-4js"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="option1" destination="6jM-5z-FYm" id="lsf-EV-8Uy"/>
+                        <outlet property="option2" destination="Ikm-Xn-Q1K" id="K0O-KF-obZ"/>
+                        <outlet property="option3" destination="Knv-aX-1kd" id="dEO-NK-AIu"/>
+                        <outlet property="option4" destination="RVq-Qa-X7H" id="9ba-ST-tda"/>
+                        <outlet property="questionLabel" destination="IyC-xY-2lL" id="foc-tO-nwU"/>
+                        <outlet property="scoreLabel" destination="xNy-Vf-aZJ" id="cHa-R3-7al"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ng0-Cp-TxH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-865" y="816"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle" width="322" height="68"/>
+    </resources>
+</document>
